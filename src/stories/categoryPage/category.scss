@@ -1,0 +1,13 @@
+.banner-content {
+  padding: 16px 0 0;
+}
+@media only screen and (min-width: 599px) {
+  .banner-content {
+    padding: 32px 0 0;
+  }
+}
+
+@import '../css/grid';
+@import '../css/header';
+@import '../css/menu';
+@import '../css/module';

@@ -1,0 +1,229 @@
+@charset "UTF-8";
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 20px 0 0;
+  display: block;
+}
+
+/* Bigger Heading fonts <h>-tags for Banners, Images etc. */
+.heading-two {
+  font-size: 44px !important;
+  line-height: 48px;
+  font-weight: 700;
+  color: black !important;
+}
+
+.heading-three {
+  font-size: 32px !important;
+  line-height: 40px;
+  font-weight: 500;
+  color: black !important;
+}
+
+.heading-four {
+  font-size: 20px !important;
+  line-height: 24px;
+  font-weight: 700;
+  color: black !important;
+}
+
+@media only screen and (min-width: 599px) {
+  .heading-one {
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 700;
+    color: black !important;
+  }
+  .heading-two {
+    font-size: 54px !important;
+    line-height: 58px;
+    font-weight: 700;
+  }
+  .heading-three {
+    font-size: 48px !important;
+    line-height: 52px;
+    font-weight: 700;
+  }
+  .heading-four {
+    font-size: 44px !important;
+    line-height: 48px;
+  }
+  .heading-five {
+    font-size: 32px !important;
+    line-height: 40px;
+    font-weight: 500;
+    color: black !important;
+  }
+}
+
+.heading1 {
+  font-size: 24px !important;
+  line-height: 28px !important;
+  font-weight: 500 !important;
+  color: black !important;
+}
+
+.heading2 {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  font-weight: 500 !important;
+  color: black !important;
+}
+
+.heading3 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+.heading4 {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+.heading5 {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+@media only screen and (min-width: 599px) {
+  .heading1 {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    font-weight: 500 !important;
+  }
+  .heading2 {
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-weight: 500 !important;
+  }
+  .heading3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+  }
+  .heading4 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-weight: 700 !important;
+  }
+}
+
+/* Ingress text, Bold */
+.ingress {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 599px) {
+  .ingress {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .ex-ingress {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+}
+
+/* Card text, Header ex. Hämta i butik, Oral B etc */
+.card__header {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+@media only screen and (min-width: 599px) {
+  .card__header {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+}
+
+/* Small text, Small text (information boxes) - Desktop */
+.small-text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+}
+
+.XS-small-text {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+/* Diffrent changes to fonts. Colors, etc */
+.text-white {
+  color: white !important;
+}
+
+.text-blue {
+  color: #78d7fa !important;
+}
+
+/* Centrera text på mobil, vänsterställd på desktop */
+.text-lg-left {
+  text-align: center;
+}
+
+@media only screen and (min-width: 599px) {
+  .text-lg-left {
+    text-align: left;
+  }
+}
+
+/* CSS för Kategorisidor, Rubrik texter...*/
+.category__description .titel-two {
+  font-size: 24px !important;
+  line-height: 28px !important;
+  font-weight: 500 !important;
+  color: black !important;
+}
+
+.category__description .content-container h2 {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  font-weight: 500 !important;
+  color: black !important;
+}
+
+.category__description .content-container h3 {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+
+@media only screen and (min-width: 599px) {
+  .category__description .titel-two {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    font-weight: 500 !important;
+  }
+  .category__description .content-container h2 {
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-weight: 500 !important;
+  }
+  .category__description .content-container h3 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+  }
+}
+/*# sourceMappingURL=font.css.map */

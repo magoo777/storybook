@@ -1,0 +1,142 @@
+.co-module {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+}
+.co-module img {
+  margin-bottom: 10px;
+}
+.co-module h5 {
+  margin: 0;
+}
+.co-module p {
+  margin: 0;
+  width: 97%;
+}
+
+.block-arrow::after {
+  content: url(https://images.clasohlson.com/SE/2021autumn/arrow.svg);
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 13px;
+}
+
+.co-module--yes {
+  text-align: center;
+}
+.co-module--no {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.co-module--no img {
+  height: 125px;
+}
+
+@media only screen and (min-width: 599px) {
+  .co-module img {
+    margin-bottom: 16px;
+  }
+}
+
+.cat-list ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  padding: 0;
+  padding-left: 30px;
+}
+.cat-list ol li {
+  margin: 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  list-style-type: none;
+  border: 0;
+}
+.cat-list ol li h5 {
+  margin: 0;
+}
+
+.cat-list-first li::before,
+.cat-list-sec li::before,
+.cat-list-third li::before {
+  content: '';
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 20px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 10px;
+}
+.cat-list-first li::before {
+  content: '1.';
+}
+.cat-list-sec li::before {
+  content: '2.';
+}
+.cat-list-third li::before {
+  content: '3.';
+}
+
+.cat-list p {
+  position: relative;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.block-arrow p::after {
+  content: url('https://images.clasohlson.com/SE/2021autumn/arrow.svg');
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+
+#more {
+  display: none;
+}
+@media only screen and (min-width: 599px) {
+  #readMoreImg {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+
+.readMore-catBtn {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Stylesheet för karusell */
+
+.owl-carousel {
+  padding: 0 20px;
+}
+.owl-carousel img {
+  width: 100%;
+}
+.owl-dots {
+  background: lightgrey;
+}
+
+@media only screen and (min-width: 600px) {
+  .owl-carousel {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+    padding: 0;
+  }
+
+  .owl-dots {
+    background: transparent;
+  }
+}

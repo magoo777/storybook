@@ -1,0 +1,176 @@
+/* Co Meny Grid */
+.co-grid-menu-2,
+.co-grid-menu-4 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  -ms-grid-columns: 1fr 10px 1fr;
+  -ms-grid-rows: 1fr;
+}
+@media only screen and (min-width: 600px) {
+  .co-grid-menu-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 10px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  .co-grid-menu-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+}
+
+/* Menyn */
+.meny-grid__container {
+  background: #eeeeec;
+}
+.meny-grid__container:hover {
+  background: #d1d1d0;
+}
+
+.meny-grid__container a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 7px 0;
+  transition: 0.1s ease-in background;
+}
+
+.meny-grid__container a:hover,
+.meny-grid__container a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.meny-grid__btn {
+  display: block;
+  line-height: 1em;
+  margin: auto 16px;
+  position: relative;
+  padding: 7px 0;
+}
+
+.meny-grid__btn::after {
+  content: url('https://images.clasohlson.com/SE/storybook/arrow.svg');
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  right: -13px;
+  top: 8px;
+}
+
+/* styles only for IE  */
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .meny-grid__btn::after {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+/* Accordion style */
+
+.co__accordian {
+  width: 100%;
+}
+
+.co__accordian input {
+  display: none;
+}
+
+.co__accordian label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  background: #eeeeec;
+  margin: 0;
+  width: 100%;
+  max-width: 992px;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+}
+.co__accordian label .meny-grid__btn::after {
+  content: '';
+}
+
+.inside-container {
+  display: block;
+  height: 0px;
+  width: 100%;
+  padding: 0px 16px;
+  background: #eeeeec;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+.inside-container ul {
+  display: block;
+}
+.inside-container ul li {
+  padding: 5px 0;
+}
+@media only screen and (min-width: 600px) {
+  .inside-container ul li {
+    border: 0;
+    padding: 5px 0;
+  }
+}
+.co__accordian input:checked ~ .inside-container {
+  height: 235px;
+}
+@media only screen and (min-width: 768px) {
+  .co__accordian input:checked ~ .inside-container {
+    height: 170px;
+  }
+}
+
+.co__accordian label::after {
+  content: url(https://images.clasohlson.com/SE/2021spring/kampanj/arrow-icon1a.png);
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  transition: all 0.2s;
+}
+
+input:checked + label::after {
+  content: url(https://images.clasohlson.com/SE/2021spring/kampanj/arrow-icon1a.png);
+  width: 10px;
+  transform: rotate(180deg);
+  right: 5px;
+  top: 0px;
+}
+
+.acc-link {
+  color: #2d8ac0 !important;
+  text-decoration: none;
+}
+.acc-link:hover {
+  color: #2d8ac0 !important;
+  background-color: transparent !important;
+}
+
+/* styles only for IE  */
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .ms-grid1 {
+    -ms-grid-column: 1;
+  }
+
+  .ms-grid2 {
+    -ms-grid-column: 3;
+  }
+  .ms-grid3 {
+    -ms-grid-column: 5;
+  }
+
+  .ms-grid4 {
+    -ms-grid-column: 7;
+  }
+  .ms-row2 {
+    -ms-grid-row: 3;
+  }
+}

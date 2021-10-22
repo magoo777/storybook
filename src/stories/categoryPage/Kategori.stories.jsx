@@ -3,6 +3,7 @@ import React from 'react';
 import { Kategori } from './Kategori';
 import { Kategori2 } from './Kategori2';
 
+
 export default {
   title: 'Category/Kategori',
   component: Kategori,
@@ -26,6 +27,7 @@ export default {
 const Template = (args) => <Kategori {...args} />;
 const Template2 = (args) => <Kategori2 {...args} />;
 
+
 export const KategoriOne = Template.bind({});
 
 KategoriOne.args = {
@@ -48,4 +50,3 @@ List.args = {
   modu: 'List',
   grid: '3',
 };
-

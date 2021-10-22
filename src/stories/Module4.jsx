@@ -9,18 +9,25 @@ import './css/module.css';
 
 
 export const Module4 = ({ ...props }) => {
-const { rubrik, imgsrc, href, header, subText } = props
+const { rubrik, imgsrc, href, grid, header, subText } = props
 
-return (
+let liMod = [];
 
-
-<li className={'co-module'} >
+for(let i=0; i< grid;i++){
+  liMod.push(  <li className={'co-module'} >
   <a href={href}><img alt={header} src={imgsrc} /></a>
   {rubrik ? <h5 className="heading5"><a href={href}>{header}</a></h5> : false}
-  <p className="block-arrow"><a href={href}>{subText}</a></p>
-</li>
+  <p><a href={href}>{subText}</a></p>
+</li>)
+}
 
-  );
+
+return (<>
+  <ul class="owl-carousel slider-component" data-desktop-item="4" data-margin="10" data-mobile-item="2"
+		data-slider="false" data-time="500000" id="co-karusell">
+    {liMod}    
+  </ul>
+  </>);
 };
 
 Module4.propTypes = {

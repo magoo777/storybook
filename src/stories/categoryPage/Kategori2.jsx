@@ -11,7 +11,7 @@ import '../css/kategori.css';
 export const Kategori2 = ({modu, test, grid, imgsrc, margin, img, rubrik, href, header, subText, subText2,  ...props }) => {
 
 let mod = [];
-let scriptTag = [];
+
 mod.push(<Module2 props={props} />)
 
 

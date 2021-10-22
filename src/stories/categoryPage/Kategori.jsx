@@ -17,13 +17,11 @@ if(grid=== "2"){
   imgsrc="https://images.clasohlson.com/SE/storybook/img320x236.webp"
 }else {
  imgsrc="https://images.clasohlson.com/SE/storybook/img236x236.webp" 
-}console.log("grid " + grid)
+}
 if(modu==="Simple"  && grid === "8"){
-  for (let i = 0; i < nr; i++) {
-  mod.push(<Module4 imgsrc={imgsrc} href={href} rubrik={rubrik} header={header} subText={subText} key={i} props={props} />)}
-}else if(modu==="Simple" && grid !== 8){
+  mod.push(<Module4 imgsrc={imgsrc} href={href} grid={grid} rubrik={rubrik} header={header} subText={subText} props={props} />)
+} else if(modu==="Simple" && grid !== 8){
 for (let i = 0; i < nr; i++) {
-    console.log("Hej ifrån modul 2 ")
  mod.push(<Module imgsrc={imgsrc} href={href} rubrik={rubrik} header={header} subText={subText} key={i}  />)
 }}else if(modu==="List"){
   mod.push(<Module3 props={props} />)
@@ -37,12 +35,11 @@ return (
       className={['co-grid', `co-grid--${grid}`, `${margin}`].join(' ')}
       {...props}
     >
-      {/* <ul className="owl-carousel slider-component mb-32" data-desktop-item="4" data-margin="10" data-mobile-item="2" data-slider="false" data-time="500000" id="co-karusell"> */}
       	
      {
      mod
      }
-     {/* </ul>      */}
+
     </section>
 
 

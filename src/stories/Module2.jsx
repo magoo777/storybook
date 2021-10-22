@@ -21,14 +21,15 @@ return ( <>
 
     <div><img alt={header} id="readMoreImg"
         src={imgsrc} />
-    {rubrik ? <h5 className="heading5"><a href={href}>{header}</a></h5> : false}    
-    <p>{subText}</p>
-    <a href="#" id="myBtn" class="readMore">Visa mer</a>
-     <h2>Vad är skillnaden på en reflex och reflekterande material? </h2>
-        <p>Våra reflexer är testade enligt EU-standard för personreflexer med god synbarhet för icke yrkesmässigt bruk.
-            Produkter i reflekterande material som inte kallas reflex ger också bra synlighet i mörker, men har inte
-            testats enligt EU-standard. </p>
-    <a href="#" id="myBtn2" class="readLess">Visa mindre</a>
+    {rubrik ? <h2 className="heading2"><a href={href}>{header}</a></h2> : false}    
+    <p>{subText} <a href="#" id="myBtn" className="readMore">Visa mer</a></p>
+    
+    <h2 className="heading2">{header}</h2>
+        <p>{subText2}</p>
+     <h2 className="heading2">{header}</h2>
+        <p>{subText2} <a href="#" id="myBtn2" className="readLess">Visa mindre</a> </p>
+            <div style={{clear:'both'}}></div>
+    
      </div>
     
 </>

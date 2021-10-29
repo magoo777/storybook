@@ -33,4 +33,11 @@ Module.propTypes = {
   subText: PropTypes.string.isRequired
 };
 
+Module.defaultProps = {
+  modu: 'Simple',
+  rubrik: true,
+  header: 'Rubriktext',
+  subText: 'Lite längre brödtext',
+  href: "#",
+};
 

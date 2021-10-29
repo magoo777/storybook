@@ -9,6 +9,8 @@ import './css/module.css';
 
 
 export const Module4 = ({ ...props }) => {
+    console.log("MAts");
+  console.log(props);
 const { rubrik, imgsrc, href, grid, header, subText } = props
 
 let liMod = [];
@@ -44,3 +46,12 @@ Module4.propTypes = {
 };
 
 
+Module4.defaultProps = {
+  modu: 'Simple',
+  rubrik: true,
+  grid: 8,
+  header: 'Rubriktext',
+  subText: 'Lite längre brödtext',
+  href: "#",
+  imgsrc: 'https://images.clasohlson.com/SE/storybook/img236x236.webp', 
+};

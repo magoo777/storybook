@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './css/module.css';
 
 export const Module3 = ({...props }) => {
- const {modul, rubrik, positionrow, imgsrc, descriptionforga, href, header, subText } = props
+const {imgsrc, href, header, subText } = props
 
 return (<>
 

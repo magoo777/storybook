@@ -12,6 +12,6 @@ const Template = (args) => <Header {...args} />;
 export const Header2 = Template.bind({});
 Header2.args = {
   rubrik: 'Lorem Ipsum',
-  img: 'https://images.clasohlson.com/SE/storybook/circle.svg',
+  img: 'https://images.clasohlson.com/SE/category/circle.svg',
   margin: 'mb-16'
 };

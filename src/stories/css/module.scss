@@ -99,22 +99,6 @@
   bottom: 10px;
 }
 
-#more {
-  display: none;
-}
-@media only screen and (min-width: 599px) {
-  #readMoreImg {
-    float: left;
-    width: 50%;
-    margin-right: 20px;
-  }
-}
-
-.readMore-catBtn {
-  font-weight: 700;
-  cursor: pointer;
-}
-
 /* Stylesheet för karusell */
 
 .owl-carousel {
@@ -138,5 +122,74 @@
 
   .owl-dots {
     background: transparent;
+  }
+}
+
+/* CSS FÖR LÄSER MER MODULE */
+
+.co-grid--1 {
+  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+  background-color: #eeeeec;
+  grid-gap: 0px;
+}
+.co-grid-acc div {
+  padding-bottom: 8px;
+}
+
+.co-grid-acc p {
+  text-align: left;
+  margin: 0 18px;
+}
+
+.readMore {
+  display: inline;
+}
+.readLess {
+  display: none;
+}
+.co-grid--1 p,
+.co-grid--1 h2 {
+  display: none;
+}
+.co-grid--1 h2 {
+  margin: 0 18px;
+}
+.co-grid--1 h2:first-of-type {
+  margin: 20px 0 10px;
+}
+.co-grid--1 h2:first-of-type,
+.co-grid--1 p:first-of-type {
+  display: block;
+}
+
+@media only screen and (min-width: 599px) {
+  .co-grid-acc {
+    margin: 0px;
+    width: 100%;
+  }
+  .co-grid-acc div {
+    padding-bottom: 0px;
+  }
+  #readMoreImg {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .co-grid--1 {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    background-color: #eeeeec;
+    grid-gap: 16px;
+  }
+
+  .co-grid-acc p {
+    text-align: left;
+    margin: 0 32px;
+    padding: 0px;
+  }
+  .co-grid--1 h2 {
+    margin: 0 32px;
   }
 }

@@ -19,12 +19,12 @@ if(grid=== "2"){
  imgsrc="https://images.clasohlson.com/SE/storybook/img236x236.webp" 
 }
 if(modu==="Simple"  && grid === "8"){
-  mod.push(<Module4 imgsrc={imgsrc} href={href} grid={grid} rubrik={rubrik} header={header} subText={subText} props={props} />)
+  mod.push(<Module4 imgsrc={imgsrc} props={props} />)
 } else if(modu==="Simple" && grid !== 8){
 for (let i = 0; i < nr; i++) {
- mod.push(<Module imgsrc={imgsrc} href={href} rubrik={rubrik} header={header} subText={subText} key={i}  />)
+ mod.push(<Module imgsrc={imgsrc} props={props} key={i}  />)
 }}else if(modu==="List"){
-  mod.push(<Module3 props={props} />)
+  mod.push(<Module3 imgsrc={imgsrc} props={props} />)
 }
 
 
@@ -33,7 +33,7 @@ return (
 
     <section
       className={['co-grid', `co-grid--${grid}`, `${margin}`].join(' ')}
-      {...props}
+      
     >
       	
      {
@@ -65,7 +65,6 @@ Kategori.defaultProps = {
   header: 'Rubriktext',
   subText: 'Lite längre brödtext',
   href: "#",
-
 };
 
 

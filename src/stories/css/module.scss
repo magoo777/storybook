@@ -132,6 +132,7 @@
   -ms-grid-columns: 1fr;
   background-color: #eeeeec;
   grid-gap: 0px;
+  padding: 0;
 }
 .co-grid-acc div {
   padding-bottom: 8px;
@@ -139,7 +140,7 @@
 
 .co-grid-acc p {
   text-align: left;
-  margin: 0 18px;
+  margin: 0 10px;
 }
 
 .readMore {
@@ -147,16 +148,17 @@
 }
 .readLess {
   display: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .co-grid--1 p,
-.co-grid--1 h2 {
+.co-grid--1 h2,
+.co-grid--1 ul {
   display: none;
 }
+
 .co-grid--1 h2 {
-  margin: 0 18px;
-}
-.co-grid--1 h2:first-of-type {
-  margin: 20px 0 10px;
+  margin: 10px;
 }
 .co-grid--1 h2:first-of-type,
 .co-grid--1 p:first-of-type {
@@ -190,6 +192,10 @@
     padding: 0px;
   }
   .co-grid--1 h2 {
-    margin: 0 32px;
+    margin: 10px 32px;
+  }
+  .readLess {
+    margin-left: 32px;
+    margin-bottom: 32px;
   }
 }

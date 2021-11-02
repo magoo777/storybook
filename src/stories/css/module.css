@@ -5,8 +5,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   max-width: 600px;
   position: relative;
@@ -43,7 +43,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .co-module--no img {
@@ -109,7 +109,7 @@
 }
 
 .block-arrow p::after {
-  content: url("https://images.clasohlson.com/SE/2021autumn/arrow.svg");
+  content: url('https://images.clasohlson.com/SE/2021autumn/arrow.svg');
   width: 10px;
   height: 5px;
   position: absolute;
@@ -135,9 +135,9 @@
     display: -ms-grid !important;
     display: grid !important;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
     padding: 0;
   }
@@ -152,6 +152,7 @@
   -ms-grid-columns: 1fr;
   background-color: #eeeeec;
   grid-gap: 0px;
+  padding: 0;
 }
 
 .co-grid-acc div {
@@ -160,7 +161,7 @@
 
 .co-grid-acc p {
   text-align: left;
-  margin: 0 18px;
+  margin: 0 10px;
 }
 
 .readMore {
@@ -169,19 +170,18 @@
 
 .readLess {
   display: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .co-grid--1 p,
-.co-grid--1 h2 {
+.co-grid--1 h2,
+.co-grid--1 ul {
   display: none;
 }
 
 .co-grid--1 h2 {
-  margin: 0 18px;
-}
-
-.co-grid--1 h2:first-of-type {
-  margin: 20px 0 10px;
+  margin: 10px;
 }
 
 .co-grid--1 h2:first-of-type,
@@ -214,7 +214,11 @@
     padding: 0px;
   }
   .co-grid--1 h2 {
-    margin: 0 32px;
+    margin: 10px 32px;
+  }
+  .readLess {
+    margin-left: 32px;
+    margin-bottom: 32px;
   }
 }
 /*# sourceMappingURL=module.css.map */

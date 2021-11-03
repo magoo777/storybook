@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .banner-content {
   padding: 16px 0 0;
 }
@@ -12,9 +13,9 @@
   display: grid;
   display: -ms-grid;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -ms-grid-template-columns: 1fr;
   -ms-grid-template-rows: 1fr 10px 1fr 10px 1fr;
   gap: 10px;
@@ -45,33 +46,33 @@
     padding: 0;
     margin-top: 0px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
   .co-grid--2 {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
   .co-grid--3 {
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
   .co-grid--4 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
@@ -87,8 +88,8 @@
   display: flex;
   background-color: #eeeeec;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .co-header__textarea h1,
@@ -139,9 +140,9 @@
 .co-grid-menu-2,
 .co-grid-menu-4 {
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
-  grid-template-rows: auto;
+      grid-template-rows: auto;
   -ms-grid-columns: 1fr 10px 1fr;
   -ms-grid-rows: 1fr;
 }
@@ -149,17 +150,17 @@
 @media only screen and (min-width: 600px) {
   .co-grid-menu-2 {
     -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
   .co-grid-menu-4 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto;
-    grid-template-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
@@ -199,7 +200,7 @@
 }
 
 .meny-grid__btn::after {
-  content: url('https://images.clasohlson.com/SE/storybook/arrow.svg');
+  content: url("https://images.clasohlson.com/SE/storybook/arrow.svg");
   width: 10px;
   height: 5px;
   position: absolute;
@@ -208,8 +209,7 @@
 }
 
 /* styles only for IE  */
-@media screen and (-ms-high-contrast: active),
-  screen and (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .meny-grid__btn::after {
     width: 5px;
     height: 5px;
@@ -293,7 +293,7 @@ input:checked + label::after {
   content: url(https://images.clasohlson.com/SE/2021spring/kampanj/arrow-icon1a.png);
   width: 10px;
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
   right: 5px;
   top: 0px;
 }
@@ -309,8 +309,7 @@ input:checked + label::after {
 }
 
 /* styles only for IE  */
-@media screen and (-ms-high-contrast: active),
-  screen and (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .ms-grid1 {
     -ms-grid-column: 1;
   }
@@ -334,8 +333,8 @@ input:checked + label::after {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   max-width: 600px;
   position: relative;
@@ -372,7 +371,7 @@ input:checked + label::after {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .co-module--no img {
@@ -438,7 +437,7 @@ input:checked + label::after {
 }
 
 .block-arrow p::after {
-  content: url('https://images.clasohlson.com/SE/2021autumn/arrow.svg');
+  content: url("https://images.clasohlson.com/SE/2021autumn/arrow.svg");
   width: 10px;
   height: 5px;
   position: absolute;
@@ -464,9 +463,9 @@ input:checked + label::after {
     display: -ms-grid !important;
     display: grid !important;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
     padding: 0;
   }
@@ -509,6 +508,15 @@ input:checked + label::after {
   display: none;
 }
 
+.co-grid--1 ul {
+  padding: 0 10px;
+}
+
+.co-grid--1 ul li {
+  padding: 5px 0 5px;
+  border: 0;
+}
+
 .co-grid--1 h2 {
   margin: 10px;
 }
@@ -544,6 +552,9 @@ input:checked + label::after {
   }
   .co-grid--1 h2 {
     margin: 10px 32px;
+  }
+  .co-grid--1 ul {
+    padding: 0 32px;
   }
   .readLess {
     margin-left: 32px;

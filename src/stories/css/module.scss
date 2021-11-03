@@ -156,6 +156,13 @@
 .co-grid--1 ul {
   display: none;
 }
+.co-grid--1 ul {
+  padding: 0 10px;
+}
+.co-grid--1 ul li {
+  padding: 5px 0 5px;
+  border: 0;
+}
 
 .co-grid--1 h2 {
   margin: 10px;
@@ -193,6 +200,9 @@
   }
   .co-grid--1 h2 {
     margin: 10px 32px;
+  }
+  .co-grid--1 ul {
+    padding: 0 32px;
   }
   .readLess {
     margin-left: 32px;

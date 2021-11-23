@@ -9,8 +9,7 @@ import './css/module.css';
 
 
 export const Module4 = ({ ...props }) => {
-    console.log("MAts");
-  console.log(props);
+
 const { rubrik, imgsrc, href, grid, header, subText } = props
 
 let liMod = [];
@@ -25,7 +24,7 @@ for(let i=0; i< grid;i++){
 
 
 return (<>
-  <ul class="owl-carousel slider-component" data-desktop-item="4" data-margin="10" data-mobile-item="2"
+  <ul class="owl-carousel slider-component" data-desktop-item="4" data-mobile-item="2"
 		data-slider="false" data-time="500000" id="co-karusell">
     {liMod}    
   </ul>

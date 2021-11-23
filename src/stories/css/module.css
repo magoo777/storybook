@@ -23,6 +23,7 @@
 .co-module p {
   margin: 0;
   width: 97%;
+  position: relative;
 }
 
 .block-arrow::after {
@@ -118,31 +119,75 @@
 }
 
 /* Stylesheet för karusell */
-.owl-carousel {
-  padding: 0 20px;
+@media only screen and (max-width: 600px) {
+  /* Karuseller för mobilen */
+  .owl-carousel {
+    padding: 0 10px;
+  }
+  .owl-carousel.slider-component .owl-dots {
+    bottom: -30px;
+  }
+  .owl-carousel li {
+    border: 0;
+    padding: 0 5px;
+  }
+  .owl-carousel.slider-component .owl-dots .owl-dot span {
+    border: 1px solid #78d7fa;
+    background: white;
+  }
+  .owl-carousel.slider-component .owl-dots .owl-dot.active span,
+  .owl-carousel.slider-component .owl-dots .owl-dot:hover span {
+    background: #78d7fa;
+    border: 1px solid #78d7fa;
+  }
 }
 
 .owl-carousel img {
   width: 100%;
 }
 
-.owl-dots {
-  background: lightgrey;
-}
-
 @media only screen and (min-width: 600px) {
   .owl-carousel {
     display: -ms-grid !important;
     display: grid !important;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr 16px 1fr;
     grid-gap: 16px;
+    padding: 0;
+  }
+  .owl-carousel li {
+    border: 0;
     padding: 0;
   }
   .owl-dots {
     background: transparent;
+  }
+  .owl-carousel li:nth-of-type(2) {
+    -ms-grid-column: 3;
+  }
+  .owl-carousel li:nth-of-type(3) {
+    -ms-grid-column: 5;
+  }
+  .owl-carousel li:nth-of-type(4) {
+    -ms-grid-column: 7;
+  }
+  .owl-carousel li:nth-of-type(5) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  .owl-carousel li:nth-of-type(6) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  .owl-carousel li:nth-of-type(7) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;
+  }
+  .owl-carousel li:nth-of-type(8) {
+    -ms-grid-column: 7;
+    -ms-grid-row: 3;
   }
 }
 
@@ -170,13 +215,13 @@
 
 .readLess {
   display: none;
-  margin-left: 10px;
   margin-bottom: 10px;
 }
 
 .co-grid--1 p,
 .co-grid--1 h2,
-.co-grid--1 ul {
+.co-grid--1 ul,
+.co-grid--1 ol {
   display: none;
 }
 
@@ -184,7 +229,8 @@
   padding: 0 10px;
 }
 
-.co-grid--1 ul li {
+.co-grid--1 ul li,
+.co-grid--1 ol li {
   padding: 5px 0 5px;
   border: 0;
 }
@@ -209,7 +255,10 @@
   #readMoreImg {
     float: left;
     width: 50%;
-    margin-right: 20px;
+    margin-right: 32px;
+  }
+  .co-grid--1 h2:first-of-type {
+    margin-top: 32px;
   }
   .co-grid--1 {
     grid-template-columns: 1fr;
@@ -225,11 +274,11 @@
   .co-grid--1 h2 {
     margin: 10px 32px;
   }
-  .co-grid--1 ul {
+  .co-grid--1 ul,
+  .co-grid--1 ol {
     padding: 0 32px;
   }
   .readLess {
-    margin-left: 32px;
     margin-bottom: 32px;
   }
 }

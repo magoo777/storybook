@@ -13,9 +13,9 @@ const {href, label, meny, link, margin, accordionText} = props;
 let nr = parseInt(meny)
 let div = [];
 if(meny=== "1"){
-  div.push(<div className="meny-grid__container co__accordian ms-grid1-acc">
+  div.push(<div className="meny-grid--container co__accordian ms-grid1-acc">
         <input type="checkbox" id="meny" />
-        <label for="meny"><span class="meny-grid__btn">{link}</span></label>
+        <label for="meny"><span class="meny-grid__link">{link}</span></label>
         <div class="inside-container">
         <p>{accordionText}</p>
         <Link href={href} label={label} className="acc-link" />  
@@ -24,7 +24,7 @@ if(meny=== "1"){
 
 }else {
 for (let i = 0; i < nr; i++) {
- div.push(<div className="meny-grid__container"><a href={href}><span className="meny-grid__btn">{link}</span></a></div>)
+ div.push(<div className="meny-grid--container"><a href={href}><span className="meny-grid__link">{link}</span></a></div>)
 }
 }
 

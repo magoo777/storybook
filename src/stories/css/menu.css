@@ -29,15 +29,15 @@
 }
 
 /* Menyn */
-.meny-grid__container {
+.meny-grid--container {
   background: #eeeeec;
 }
 
-.meny-grid__container:hover {
+.meny-grid--container:hover {
   background: #d1d1d0;
 }
 
-.meny-grid__container a {
+.meny-grid--container a {
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -47,13 +47,13 @@
   transition: 0.1s ease-in background;
 }
 
-.meny-grid__container a:hover,
-.meny-grid__container a:active {
+.meny-grid--container a:hover,
+.meny-grid--container a:active {
   color: #000;
   text-decoration: none;
 }
 
-.meny-grid__btn {
+.meny-grid__link {
   display: block;
   line-height: 1em;
   margin: auto 16px;
@@ -61,7 +61,7 @@
   padding: 7px 0;
 }
 
-.meny-grid__btn::after {
+.meny-grid__link::after {
   content: url("https://images.clasohlson.com/SE/storybook/arrow.svg");
   width: 10px;
   height: 5px;
@@ -72,7 +72,7 @@
 
 /* styles only for IE  */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .meny-grid__btn::after {
+  .meny-grid__link::after {
     width: 5px;
     height: 5px;
   }
@@ -100,7 +100,7 @@
   font-size: 12px;
 }
 
-.co__accordian label .meny-grid__btn::after {
+.co__accordian label .meny-grid__link::after {
   content: '';
 }
 

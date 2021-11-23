@@ -319,6 +319,7 @@ h5 {
 .co-module p {
   margin: 0;
   width: 97%;
+  position: relative;
 }
 
 .block-arrow::after {
@@ -413,26 +414,14 @@ h5 {
   bottom: 10px;
 }
 
-#more {
-  display: none;
-}
-
-@media only screen and (min-width: 599px) {
-  #readMoreImg {
-    float: left;
-    width: 50%;
-    margin-right: 20px;
-  }
-}
-
-.readMore-catBtn {
-  font-weight: 700;
-  cursor: pointer;
-}
-
 /* Stylesheet för karusell */
 .owl-carousel {
   padding: 0 20px;
+}
+
+.owl-carousel li {
+  border: 0;
+  padding: 0;
 }
 
 .owl-carousel img {
@@ -456,6 +445,94 @@ h5 {
   }
   .owl-dots {
     background: transparent;
+  }
+}
+
+/* CSS FÖR LÄSER MER MODULE */
+.co-grid--1 {
+  grid-template-columns: 1fr;
+  -ms-grid-columns: 1fr;
+  background-color: #eeeeec;
+  grid-gap: 0px;
+  padding: 0;
+}
+
+.co-grid-acc div {
+  padding-bottom: 8px;
+}
+
+.co-grid-acc p {
+  text-align: left;
+  margin: 0 10px;
+}
+
+.readMore {
+  display: inline;
+}
+
+.readLess {
+  display: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.co-grid--1 p,
+.co-grid--1 h2,
+.co-grid--1 ul {
+  display: none;
+}
+
+.co-grid--1 ul {
+  padding: 0 10px;
+}
+
+.co-grid--1 ul li {
+  padding: 5px 0 5px;
+  border: 0;
+}
+
+.co-grid--1 h2 {
+  margin: 10px;
+}
+
+.co-grid--1 h2:first-of-type,
+.co-grid--1 p:first-of-type {
+  display: block;
+}
+
+@media only screen and (min-width: 599px) {
+  .co-grid-acc {
+    margin: 0px;
+    width: 100%;
+  }
+  .co-grid-acc div {
+    padding-bottom: 0px;
+  }
+  #readMoreImg {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+  }
+  .co-grid--1 {
+    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    background-color: #eeeeec;
+    grid-gap: 16px;
+  }
+  .co-grid-acc p {
+    text-align: left;
+    margin: 0 32px;
+    padding: 0px;
+  }
+  .co-grid--1 h2 {
+    margin: 10px 32px;
+  }
+  .co-grid--1 ul {
+    padding: 0 32px;
+  }
+  .readLess {
+    margin-left: 32px;
+    margin-bottom: 32px;
   }
 }
 /*# sourceMappingURL=module.css.map */
@@ -760,4 +837,4 @@ input:checked + label::after {
 }
 /*# sourceMappingURL=menu.css.map */
 
-/*# sourceMappingURL=main.4c15ea1c.chunk.css.map*/
+/*# sourceMappingURL=main.e82f5c2d.chunk.css.map*/

@@ -9,7 +9,7 @@ export default {
   component: Kategori,
   argTypes: {
    grid: {
-      options: ['2','3','4','8'],
+      options: ['2','2s1b', '1b2s' ,'3','4','8'],
       control: { type: 'select' }
     },
     margin: {
@@ -33,7 +33,7 @@ export const KategoriOne = Template.bind({});
 KategoriOne.args = {
   modu: 'Simple',
   grid: '4',
-  rubrik: true
+  
 };
 
 export const ReadMore = Template2.bind({});

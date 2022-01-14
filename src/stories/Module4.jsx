@@ -17,7 +17,7 @@ let liMod = [];
 for(let i=0; i< grid;i++){
   liMod.push(  <li className={'co-module'} >
   <a href={href}><img alt={header} src={imgsrc} /></a>
-  {rubrik ? <h5 className="heading5"><a href={href}>{header}</a></h5> : false}
+  {rubrik ? <h5 className="heading5"><a href={href}>{header}</a></h5> : null}
   <p className="block-arrow"><a href={href}>{subText}</a></p>
 </li>)
 }

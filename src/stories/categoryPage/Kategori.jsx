@@ -20,13 +20,16 @@ if(grid=== "2"){
 }
 if(modu==="Simple"  && grid === "8"){
   mod.push(<Module4 imgsrc={imgsrc} props={props} />)
-} else if(modu==="Simple" && grid !== 8){
+} else if(modu==="Simple" && grid === "2s1b" || grid === "1b2s"){
+for (let i = 0; i < 3; i++) {
+ console.log(i)
+ mod.push(<Module imgsrc={imgsrc} props={props} key={i}  />)
+}} else if(modu==="Simple" && grid !== 8){
 for (let i = 0; i < nr; i++) {
  mod.push(<Module imgsrc={imgsrc} props={props} key={i}  />)
-}}else if(modu==="List"){
+}} else if(modu==="List"){
   mod.push(<Module3 imgsrc={imgsrc} props={props} />)
 }
-
 
 
 return (

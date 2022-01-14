@@ -21,7 +21,7 @@ Grid1.args = {
 
 export const Grid1col2 = Template.bind({});
 Grid1col2.args = {
-  grid: '1col2',
+  grid: '2 små 1 stor',
 };
 
 export const Grid2 = Template.bind({});

@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
  */
 export const Button = ({ primary, backgroundColor, url, label, ...props }) => {
   const mode = primary ? '' : 'btnNB-secondary';
+  console.log(Button)
+    
   return (
     <a
       href={url}

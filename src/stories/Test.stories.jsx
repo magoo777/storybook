@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Test } from './Test';
 
-
 export default {
     
   title: 'Example/Testar',
@@ -25,7 +24,6 @@ export const Module = Template.bind({});
 Module.args = {
   antal: 1,
   rubrik: true,
-
   subText: "En lite längre text, som kallas brödtext."
 };
 

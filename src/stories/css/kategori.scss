@@ -81,6 +81,47 @@
     -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
     -ms-grid-rows: 1fr;
   }
+  .co-grid--4-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  
+  .co-grid--5-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  
+  .co-grid--6-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  
+  .co-grid--7-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  
+  .co-grid--8-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
+  
+  .co-grid--9-mission {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+    -ms-grid-rows: 1fr;
+  }
 }
 
 /* Karusell, Missions CSS */

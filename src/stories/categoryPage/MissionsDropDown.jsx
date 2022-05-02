@@ -43,7 +43,7 @@ return (<>
       
     ><div>
 <h3 className='heading3'>Kategorier och underkategorier</h3>
-<ul className={['co-grid', `co-grid--${grid}`, `${margin}`, 'owl-carousel slider-component' ].join(' ')} data-desktop-item="4" data-mobile-item="1" data-slider="true" data-time="500000" id="co-karusell-mission">
+<ul className={['co-grid', `co-grid--${grid}`, `${margin}`, 'owl-carousel slider-component owl-loaded owl-drag' ].join(' ')} data-desktop-item="4" data-mobile-item="1" data-slider="true" data-time="500000" id="co-karusell-mission">
 	
     {
         mod

@@ -32,15 +32,15 @@ const Template = (args) => <MissionsDropDownText {...args} />;
 export const Mission = Template3.bind({});
 
 Mission.args = {
-  grid: '4'
+  grid: '4',
 };
 export const MissionDropDown = Template4.bind({});
 
 MissionDropDown.args = {
-  grid: '4'
+  grid: '4',
 };
 export const MissionDropDownText = Template.bind({});
 
 MissionDropDownText.args = {
-  grid: '4'
+  grid: '4',
 };

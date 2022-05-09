@@ -7,7 +7,7 @@ import { MissionsDropDownText } from './MissionsDropDownText';
 
 
 export default {
-  title: 'Category/Kategori/Mission',
+  title: 'Category/Kategori/Missions',
   component: Missions,
   argTypes: {
     margin: {

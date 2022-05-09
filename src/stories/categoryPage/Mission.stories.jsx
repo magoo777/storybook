@@ -14,6 +14,10 @@ export default {
       options: ['mb-48', 'mb-32', 'mb-16'],
       control: { type: 'radio' }
    },
+   highImg: {
+     options: [true, false],
+     control: {type: 'radio'}
+   }
   }
 
 };

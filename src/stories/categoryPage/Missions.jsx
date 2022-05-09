@@ -4,7 +4,14 @@ import PropTypes from 'prop-types';
 import '../css/kategori.css';
 
 
-export const Missions = ({modu, grid, imgsrc, margin, img, rubrik, href, header, subText,  ...props }) => {
+export const Missions = ({modu, grid, imgsrc, margin, img, rubrik, href, header, subText, highImg,  ...props }) => {
+
+let idKarusell = ""
+if(!highImg){
+  idKarusell = "co-karusell-mission"
+}else {
+  idKarusell = "co-karusell-mission-img"
+}
 
 let nr = parseInt(grid)
 let mod = [];
@@ -40,7 +47,7 @@ return (<>
       
     ><div>
 <h3 className='heading3'>Kategorier</h3>
-<ul className={['co-grid', `co-grid--${grid}-mission`, `${margin}`, 'owl-carousel slider-component owl-loaded owl-drag' ].join(' ')} style={{gridTemplateColumns: `${grid}`}} data-desktop-item="4" data-mobile-item="1" data-slider="true" data-time="500000" id="co-karusell-mission">
+<ul className={['co-grid', `co-grid--${grid}-mission`, `${margin}`, 'owl-carousel slider-component owl-loaded owl-drag' ].join(' ')} style={{gridTemplateColumns: `${grid}`}} data-desktop-item="4" data-mobile-item="1" data-slider="true" data-time="500000" id={`${idKarusell}`}>
 	
     {
         mod
@@ -58,7 +65,7 @@ Missions.propTypes = {
  
   
   margin: PropTypes.oneOf(['mb-48', 'mb-32', 'mb-16']),
-  
+  highImg: false
     // modules: PropTypes.oneOf(['1', '2', '3', '4']),
   /**
    * Button contents
@@ -69,7 +76,7 @@ Missions.propTypes = {
 
 Missions.defaultProps = {
   grid: null,
-
+  highImg: false
 };
 
 

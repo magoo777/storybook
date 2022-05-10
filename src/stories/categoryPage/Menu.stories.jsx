@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Menu } from './Menu';
+import { MenuS } from './MenuS';
 
 export default {
   title: 'Category/Menu',
@@ -11,6 +12,7 @@ export default {
 };
 
 const Template = (args) => <Menu {...args} />;
+const Template2 = (args) => <MenuS {...args} />;
 
 
 export const Menu1 = Template.bind({});
@@ -34,6 +36,14 @@ Menu2.args = {
 export const Menu4 = Template.bind({});
 
 Menu4.args = {
+  meny: '4',
+  link: 'Lorem Ipsum',
+  href: '#',
+};
+
+export const MenuScroll = Template2.bind({});
+
+MenuScroll.args = {
   meny: '4',
   link: 'Lorem Ipsum',
   href: '#',

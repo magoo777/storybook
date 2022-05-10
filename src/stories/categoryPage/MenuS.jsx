@@ -20,6 +20,7 @@ return (
 
      <section className="meny-carousell">
 <div>
+<h3 className='heading3'>Brands</h3>
 <ul className={['co-grid', `co-grid--${meny}-mission`, `${margin}`, 'owl-carousel slider-component'].join(' ')} data-desktop-item="4" data-mobile-item="1" data-slider="true" data-time="500000" id="meny-carousell">
      { li } 
 </ul>

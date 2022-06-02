@@ -22,8 +22,8 @@ const List = ({nr}) => (
 		<figure>
       		<div className="figure" style={{position: "relative"}}>
 			<img src="https://images.clasohlson.com/SE/storybook/640x280.png" className="figimage"/>
-			<div className="overlay" style={{backgroundImage : 'url("https://images.clasohlson.com/SE/storybook/640x280b.png")'}}>
-
+			<div className="overlay">
+        <a href="#"><img src="https://images.clasohlson.com/SE/storybook/640x280b.png" /></a>
 			</div>
 			</div>
 			<figcaption>

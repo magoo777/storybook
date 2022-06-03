@@ -212,7 +212,9 @@
 }
 
 .mission-carousell .accordion:hover .accordion-content {
-  max-height: 300px;
+  max-height: 500px;
+  position: relative;
+  z-index: 999;
 }
 
 .mission-carousell .accordion-content {
@@ -331,17 +333,16 @@
 
 .overlay {
   position: absolute;
-  bottom: 100%;
+  top: 0;
   left: 0;
   right: 0;
   overflow: hidden;
   width: 100%;
-  height: 0;
+  z-index: -1;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   -o-object-fit: contain;
      object-fit: contain;
-  background-size: 100% 100%;
 }
 
 .figure {
@@ -349,7 +350,14 @@
 }
 
 .figure:hover .overlay {
-  bottom: 0;
+  top: 0;
+  height: 100%;
+  z-index: 999;
+}
+
+.co-meny-carousell a::after {
+  content: "";
+  width:100%;
   height: 100%;
 }
 /*# sourceMappingURL=kategori.css.map */
